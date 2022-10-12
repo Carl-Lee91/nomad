@@ -1,83 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
 body {
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    width: 35vh;
+    border: 10px solid mediumaquamarine;
+    padding: 10% 7%;
+}
+.status-bar__column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 65%;
+}
+.subject {
+    display: flex;
+}
+.box {
     display: flex;
     justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+}
+.big {
+    height: 180px;
+    width: 180px;
+    background-color: yellow;
+    border-radius: 10%;
+}
+.subject-word {
+    margin-left: 15px;
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    height: 100vh;
-    align-items:center;
-    background-color:#6BBCBE
 }
-@keyframes coin {
-    0% {
-        transform: rotateZ(0)
-    }
-    40% {
-        transform: rotateZ(180deg)
-    }
-    50% {
-        transform: rotateZ(180deg)        
-    }
-    90% {
-        transform: rotateZ(360deg)
-    }
-    100% {
-        transform: rotateZ(360deg)
-    }
+.bold {
+    font-weight: bolder;
 }
-@keyframes piano {
-    0% {
-        transform: scaleY(1.0);
-    }
-    25% {
-        transform: scaleY(2.0);
-    }
-    50% {
-        transform: scaleY(1.0);
-    }
-    100% {
-        transform: scaleY(1.0);
-    }
+.fa-google-play {
+    margin-right: 10px;
 }
-.first {
-    flex-wrap: nowrap;
-    display: flex; 
-    margin : 50px;
-    animation: coin 2.0s ease-in-out infinite;
-
+.else {
+    font-size: 30px;    
+    line-height: 160%;
+}
+.title {
+    font-size: 50px;
+    line-height: 110%;
+}
+.name {
+    font-size: 25px;
+}
+.middle-bar {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.long {
+    height: 90px;
+    width: 210px;    
+    border-radius: 30px;
+    border-width: 4px 4px 10px 4px;
 }
 .circle {
-    border: 5px solid white;
+    width: 90px;
     border-radius: 50%;
-    margin: 15px;    
 }
-.second{
-    flex-wrap: nowrap;
+.bottom {
+    flex-direction: column;   
+}
+.list {
     display: flex;
-    margin : 50px;
-
+    margin: 20px 0px
 }
-.piano{
-    border: 7px solid white;
-    margin: 5px;  
-    height: 50px;
+.small {
+    height: 70px;
+    width: 70px;
+    border-radius: 10%;
 }
-.one{
-    animation: piano 1.0s ease-in-out infinite;
-    
+.light {
+    font-size: 17px;
 }
-.two{
-    animation: piano 1.0s ease-in-out infinite;
-    animation-delay: 0.1s;
+.red {
+    background-color: red;
 }
-.three{
-    animation: piano 1.0s ease-in-out infinite;
-    animation-delay: 0.2s;
+.pink {
+    background-color: pink;
 }
-.four{
-    animation: piano 1.0s ease-in-out infinite;
-    animation-delay: 0.3s;
+.blue {
+    background-color: blue;
 }
-.five{
-    animation: piano 1.0s ease-in-out infinite;
-    animation-delay: 0.4s;
+.mint {
+    background-color: mediumaquamarine;
 }

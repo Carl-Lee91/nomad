@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+    align-items:center;
+    background-color:#6BBCBE
+}
+@keyframes coin {
+    0% {
+        transform: rotateZ(0)
+    }
+    40% {
+        transform: rotateZ(180deg)
+    }
+    50% {
+        transform: rotateZ(180deg)        
+    }
+    90% {
+        transform: rotateZ(360deg)
+    }
+    100% {
+        transform: rotateZ(360deg)
+    }
+}
+@keyframes piano {
+    0% {
+        transform: scaleY(1.0);
+    }
+    25% {
+        transform: scaleY(2.0);
+    }
+    50% {
+        transform: scaleY(1.0);
+    }
+    100% {
+        transform: scaleY(1.0);
+    }
+}
+.first {
+    flex-wrap: nowrap;
+    display: flex; 
+    margin : 50px;
+    animation: coin 2.0s ease-in-out infinite;
+
+}
+.circle {
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: 15px;    
+}
+.second{
+    flex-wrap: nowrap;
+    display: flex;
+    margin : 50px;
+
+}
+.piano{
+    border: 7px solid white;
+    margin: 5px;  
+    height: 50px;
+}
+.one{
+    animation: piano 1.0s ease-in-out infinite;
+    
+}
+.two{
+    animation: piano 1.0s ease-in-out infinite;
+    animation-delay: 0.1s;
+}
+.three{
+    animation: piano 1.0s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+.four{
+    animation: piano 1.0s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+.five{
+    animation: piano 1.0s ease-in-out infinite;
+    animation-delay: 0.4s;
+}

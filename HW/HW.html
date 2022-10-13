@@ -3,71 +3,115 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Playlist</title>
+    <title>Library</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
 
-    <div class="status-bar__column">
-     <i class="fa-solid fa-xmark fa-2x"></i>
-     <span class="bold else">Playlist</span>
+    <header class="status-bar">
+      <i class="fa-regular fa-chart-bar"></i>
+      <span class="normal">library</span>
+      <i class="fa-solid fa-basket-shopping"></i>
+    </header>
+
+    <div class="search-box">
+      <input class="search-box__text" type="text" placeholder="Search books....">
+      <i class="fa-solid fa-magnifying-glass"></i>
     </div>
 
-    <section class="subject">
-      <div class="subject-picture">
-        <div class="box big yellow">
-          <i class="fa-solid fa-image fa-5x"></i>
-        </div>
-      </div>
-      <div class="subject-word">
-        <span class="bold title">Random Love</span>
-        <span class="bold name">by Divay Kapoor</span>
-      </div>
-    </section>
+    <main>
+      <section class="book-of-the-day">
+        <span class="title">Book of the day</span>
+          <div class="left">
+            <img class="book big" src="img/book1.jpeg" />
+          </div>
+          <div class="right">
+            <span class="normal">Lunar Storm</span>
+            <span class="light">Terry Crosby</span>
+            <div class="star-big">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star grey"></i>
+            </div>
+            <div class="genre">
+            <div class="genretext">
+              <span>Lunar</span>
+            </div>
+            <div class="genretext">
+              <span>Space</span>
+            </div>
+            </div>
+            <div class="bookmark">
+              <div class="bookmark__circle">
+                <i class="fa-solid fa-bookmark"></i>
+              </div>
+              <div class="bookmark__book">
+                <span class="bookmark__mark">Book Now</span>
+              </div>
+            </div>
+          </div>
+      </section> 
 
-    <section class="middle-bar">
-      <div class="box long">
-        <i class="fa-brands fa-google-play"></i>
-        <span class="bold else">Play</span>
-      </div>
-      <div class="box circle long">
-        <i class="fa-regular fa-heart fa-3x"></i>
-      </div>
-      <div class="box circle long">
-        <i class="fa-regular fa-plus fa-3x"></i>
-      </div>
-    </section>
+      <section class="top-adventure">
+        <span class="title">Top Adventure</span>
+        <div class="list">
+          <div class="rating">
+            <img class="book small" src="img/book2.jpeg" />
+              <div class="star">
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs grey"></i>
+              </div>
+          </div>
+          <div class="rating">
+            <img class="book small" src="img/book3.jpg" />
+              <div class="star">
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs grey"></i>
+              </div>
+          </div> 
+          <div class="rating">
+            <img class="book small" src="img/book4.png" />
+              <div class="star">
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs"></i>
+                <i class="fa-solid fa-star fa-2xs grey"></i>
+              </div>
+          </div>
+          <div class="rating">
+            <img class="book small" src="img/book5.jpg"/>
+            <div class="star">
+              <i class="fa-solid fa-star fa-2xs"></i>
+              <i class="fa-solid fa-star fa-2xs"></i>
+              <i class="fa-solid fa-star fa-2xs"></i>
+              <i class="fa-solid fa-star fa-2xs"></i>
+              <i class="fa-solid fa-star fa-2xs grey"></i>
+              </div>
+          </div> 
+        </div>
+      </section>
 
-    <section class="subject bottom">
-      <div class="list">
-        <div class="box small red"></div>
-        <div class="subject-word bottom">
-          <span class="bold else">Matargasti</span>
-          <span class="light name">Mohit Chauhan</span>
+      <section class="popular-authors">
+        <span class="title">Popular authors</span>
+        <div class="left">
+          <img class="middle" src="img/author.jpeg" />
+        </div>  
+        <div class="right__authors">
+          <p class="normal__authors">George Raymond Richard Martin</p>
+          <p class="light__authors">Modern American science fiction writer, screenwriter, producer and editor, winner of many literary awards.</p>
         </div>
-      </div>
-      <div class="list">
-        <div class="box small pink"></div>
-        <div class="subject-word bottom">
-          <span class="bold else">Attitude</span>
-          <span class="light name">Lewis Ofman · Attitude</span>
-        </div>
-      </div>
-      <div class="list">
-        <div class="box small blue"></div>
-        <div class="subject-word bottom">
-          <span class="bold else">Try Everthing</span>
-          <span class="light name">Shakira · Zootopia</span>
-        </div>
-      </div>
-      <div class="list">
-        <div class="box small mint"></div>
-        <div class="subject-word bottom">
-          <span class="bold else">Sunflower</span>
-          <span class="light">Joseph Vincent · Sunflower</span>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
+
     <script src="https://kit.fontawesome.com/53fef6e1e5.js" crossorigin="anonymous"></script>
   </body>
 </html>
